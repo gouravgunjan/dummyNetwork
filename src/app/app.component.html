@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-6">
+      <h1>Dummy Search</h1>
+      <hr />
+      <label for="searchBox" class="form-label">Search</label>
+      <input type="text" class="form-control" name="search"
+        [formControl]="searchControl" id="searchBox" placeholder="Search Anything"
+        autocomplete="off">
+      <br>
+      <h5>Results For: {{resultFor}}</h5>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let result of results">{{result}}</li>
+      </ul>
+    </div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-6">
+      <br>
+      <br>
+      <hr>
+      <h5>Simulated Network Calls</h5>
+      <app-bar></app-bar>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

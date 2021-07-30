@@ -1,0 +1,8 @@
+<div class="container" id="network-container">
+    <div class="row items" *ngFor="let bar of timeBars" [style.marginLeft.px]="bar.startPx" [style.width.px]="bar.length">
+        <div class="inner-container">
+            <div class="start-info">{{bar.grayTxt}} ms</div>
+            <div class="bar" [style.backgroundColor]="bar.color" >{{ bar.timeTaken }} ms</div>
+        </div>
+    </div>
+</div>

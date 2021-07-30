@@ -1,0 +1,30 @@
+
+.container {
+ padding: 0;
+}
+.row {
+    font-size: 11px;
+    &.items {
+        display: flex;
+        flex-direction: column;
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            .start-info {
+                margin-right: 6px;
+                color: #aaa;
+                display: inline-flex;
+                white-space: nowrap;
+            }
+            .bar {
+                color: #fff;
+                display: inline-flex;
+                flex-grow: 1;
+                white-space: nowrap;
+                padding: 6px;
+            }
+        }
+    }
+    
+}
